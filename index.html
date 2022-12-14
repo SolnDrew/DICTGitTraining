@@ -5,7 +5,7 @@
 <style>
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  max-width: 350px;
   margin: auto;
   text-align: center;
   font-family: arial;
@@ -35,25 +35,40 @@ a {
   color: black;
 }
 
-button:hover, a:hover {
-  opacity: 0.7;
+.quote {
+  margin: 0;
+  background: #eee;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 1em;
 }
+.quote figcaption,
+.quote blockquote {
+  margin: 1em;
+}
+
 </style>
 </head>
-<body>
+<body style="margin-top: 2em;">
 
-<h2 style="text-align:center">User Profile Card</h2>
 
 <div class="card">
-  <img src="https://www.facebook.com/photo/?fbid=120112530824434&set=a.120112534157767" alt="SolnDrew" style="width:100%">
-  <h1>John Doe</h1>
+  <img src="https://scontent.fmnl25-5.fna.fbcdn.net/v/t39.30808-6/300377237_100199422833032_2795362295661000603_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHqvgz6a6qQbT2bEgetcuY3vHfg1i67EkG8d-DWLrsSQVNLeIcpT8eDyfeTWrCj0RUH39eGJiouYTa07kpMckcw&_nc_ohc=t3qKWzpP8HoAX-dRmyx&_nc_ht=scontent.fmnl25-5.fna&oh=00_AfCVFTa8jFf4EgafNkk0tkH5NMXzOpRK9UgU_BASx5OJ9Q&oe=639D56B0" alt="SolnDrew" style="width:100%">
+  <h1  style="margin-left: 1rem;margin-right: 1rem;">Merasol <i class="fa fa-heart"  style="color:red"></i> Andrew</h1>
   <p class="title">SolnDrew Vlogs</p>
-  <p>solndrew.1020@gmail.com</p>
+  <figure class="quote">
+  <blockquote>
+   Love isn't something you find. Love is something that finds you.
+  </blockquote>
+  <figcaption>
+   
+</figure>
+
   <div style="margin: 24px 0;">
-    <a href="https://www.youtube.com/@solndrewvlogs7068"><i class="fa-brands fa-youtube"></i></a> 
+    <a href="https://www.youtube.com/@solndrewvlogs7068"><i class="fa fa-youtube"></i></a> 
     <a href="https://www.facebook.com/solndrew1020"><i class="fa fa-facebook"></i></a> 
   </div>
-  <p><button>Contact</button></p>
+ 	<br/>
 </div>
 
 </body>
