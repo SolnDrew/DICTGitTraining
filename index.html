@@ -1,75 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 350px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
 
-.title {
-  color: grey;
-  font-size: 18px;
-}
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
 
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
+        h1 {
+            text-align: center;
+            color: #333;
+        }
 
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
+        .section {
+            margin-bottom: 20px;
+        }
 
-.quote {
-  margin: 0;
-  background: #eee;
-  margin: 1em;
-  padding: 1em;
-  border-radius: 1em;
-}
-.quote figcaption,
-.quote blockquote {
-  margin: 1em;
-}
+        .section h2 {
+            color: #555;
+        }
 
-</style>
+        .section p {
+            line-height: 1.6;
+        }
+
+        .section.skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin: 5px;
+            font-size: 14px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        /* Add your animations here */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Apply animations to elements */
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in-out;
+        }
+
+        .fadeIn {
+            animation-name: fadeIn;
+        }
+    </style>
 </head>
-<body style="margin-top: 2em;">
-
-
-<div class="card">
-  <img src="https://scontent.fmnl25-5.fna.fbcdn.net/v/t39.30808-6/300377237_100199422833032_2795362295661000603_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHqvgz6a6qQbT2bEgetcuY3vHfg1i67EkG8d-DWLrsSQVNLeIcpT8eDyfeTWrCj0RUH39eGJiouYTa07kpMckcw&_nc_ohc=t3qKWzpP8HoAX-dRmyx&_nc_ht=scontent.fmnl25-5.fna&oh=00_AfCVFTa8jFf4EgafNkk0tkH5NMXzOpRK9UgU_BASx5OJ9Q&oe=639D56B0" alt="SolnDrew" style="width:100%">
-  <h1  style="margin-left: 1rem;margin-right: 1rem;">Merasol <i class="fa fa-heart"  style="color:red"></i> Andrew</h1>
-  <p class="title">SolnDrew Vlogs</p>
-  <figure class="quote">
-  <blockquote>
-   Love isn't something you find. Love is something that finds you.
-  </blockquote>
-  <figcaption>
-   
-</figure>
-
-  <div style="margin: 24px 0;">
-    <a href="https://www.youtube.com/@solndrewvlogs7068"><i class="fa fa-youtube"></i></a> 
-    <a href="https://www.facebook.com/solndrew1020"><i class="fa fa-facebook"></i></a> 
-  </div>
- 	<br/>
-</div>
-
+<body>
+    <div class="container animated fadeIn">
+        <h1>Your Name</h1>
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Your introduction goes here.</p>
+        </div>
+        <div class="section">
+            <h2>Experience</h2>
+            <p>Your work experience goes here.</p>
+        </div>
+        <div class="section skills">
+            <h2>Skills</h2>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <!-- Add more skills here -->
+        </div>
+        <div class="section">
+            <h2>Contact</h2>
+            <div class="contact">
+                <p>Email: your.email@example.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+                <p>Website: www.yourwebsite.com</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
